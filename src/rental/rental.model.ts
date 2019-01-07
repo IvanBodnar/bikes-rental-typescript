@@ -1,10 +1,4 @@
 
-export interface IRental {
-    id: number;
-    price: number;
-    calculateTotalCost: (timeConsumed: number) => number;
-}
-
 export class Rental {
     price: number = 0;
     constructor(
