@@ -1,5 +1,10 @@
 import {AvailablePromotions} from "../promotion/promotion.model";
 
+// Class from which all specific rental classes inherit.
+// It includes a field to store the time the rental lasted,
+// and a method to calculate the raw cost (no promotion), taking
+// into account the price of the rental.
+// A promotion can also be included.
 export class Rental {
     price: number = 0;
     constructor(
