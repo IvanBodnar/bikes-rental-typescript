@@ -1,10 +1,15 @@
 import {Rental, HourRental, DayRental, WeekRental} from "./rental.model";
 
-
-test('Rental.calculateTotalCost works', () => {
+test('Rental.calculateTotalCost works with no timeConsumed', () => {
     const rental = new Rental(1);
     rental.price = 5;
-    expect(rental.calculateTotalCost(5)).toEqual(25);
+    expect(rental.calculateTotalCost()).toEqual(0);
+});
+
+test('Rental.calculateTotalCost works with timeConsumed', () => {
+    const rental = new Rental(1, 5);
+    rental.price = 5;
+    expect(rental.calculateTotalCost()).toEqual(25);
 });
 
 test('HourRental creates with correct price', () => {
