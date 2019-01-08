@@ -6,6 +6,7 @@
   "types": "build/main",
   "scripts": {
     "test": "jest",
+    "coverage": "jest --coverage",
     "build": "tsc -p .",
     "go": "npm run build; node build/main.js"
   },
@@ -19,5 +20,6 @@
     "ts-jest": "^23.10.5",
     "ts-node": "^7.0.1",
     "typescript": "^3.2.2"
-  }
+  },
+  "dependencies": {}
 }
