@@ -7,8 +7,7 @@
   "scripts": {
     "test": "jest",
     "coverage": "jest --coverage",
-    "build": "tsc -p .",
-    "go": "npm run build; node build/main.js"
+    "build": "tsc -p ."
   },
   "keywords": [],
   "author": "",
